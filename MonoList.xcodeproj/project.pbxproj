@@ -14,6 +14,7 @@
 		9D040B832AF1121A000B67A1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9D040B822AF1121A000B67A1 /* FirebaseAuth */; };
 		9D040B852AF1121A000B67A1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9D040B842AF1121A000B67A1 /* FirebaseFirestore */; };
 		9D040B872AF1121A000B67A1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9D040B862AF1121A000B67A1 /* FirebaseFirestoreSwift */; };
+		9D040B892AF27ADA000B67A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D040B882AF27ADA000B67A1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9D040B752AF10E58000B67A1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D040B772AF10E5A000B67A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D040B7A2AF10E5A000B67A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9D040B882AF27ADA000B67A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +59,10 @@
 		9D040B722AF10E58000B67A1 /* MonoList */ = {
 			isa = PBXGroup;
 			children = (
-				9D040B732AF10E58000B67A1 /* MonoListApp.swift */,
-				9D040B752AF10E58000B67A1 /* ContentView.swift */,
-				9D040B772AF10E5A000B67A1 /* Assets.xcassets */,
+				9DFA24E92AF29091003BEEE2 /* Other */,
+				9DFA24E82AF2907B003BEEE2 /* Models */,
+				9DFA24E72AF2906E003BEEE2 /* ViewModels */,
+				9DFA24E62AF29060003BEEE2 /* Views */,
 				9D040B792AF10E5A000B67A1 /* Preview Content */,
 			);
 			path = MonoList;
@@ -71,6 +74,38 @@
 				9D040B7A2AF10E5A000B67A1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9DFA24E62AF29060003BEEE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9D040B752AF10E58000B67A1 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9DFA24E72AF2906E003BEEE2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9DFA24E82AF2907B003BEEE2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9DFA24E92AF29091003BEEE2 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9D040B772AF10E5A000B67A1 /* Assets.xcassets */,
+				9D040B882AF27ADA000B67A1 /* GoogleService-Info.plist */,
+				9D040B732AF10E58000B67A1 /* MonoListApp.swift */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +176,7 @@
 			files = (
 				9D040B7B2AF10E5A000B67A1 /* Preview Assets.xcassets in Resources */,
 				9D040B782AF10E5A000B67A1 /* Assets.xcassets in Resources */,
+				9D040B892AF27ADA000B67A1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,11 +319,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MonoList/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MonoList;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,11 +347,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MonoList/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = MonoList;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
