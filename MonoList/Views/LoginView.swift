@@ -9,7 +9,35 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            //Header
+            ZStack {
+                RoundedRectangle(cornerRadius: 0)
+                    .foregroundColor(.mint)
+                    .rotationEffect(Angle(degrees: 15))
+                    
+                
+                VStack {
+                    Text("MonoList")
+                        .font(.system(size: 50))
+                        .foregroundColor(.white)
+                        .bold()
+                    Text("Productivity turbocharged")
+                        .font(.system(size: 30))
+                        .foregroundColor(.white)
+                        .fontWeight(.light)
+                }
+                .padding(.top, 30)
+            }
+            .frame(width: UIScreen.main.bounds.width * 3, height: 300)
+            .offset(y: -100)
+            Spacer()
+            
+            //Actual Login Form
+            
+            //Footer/Sign-up nav link
+            
+        }
     }
 }
 
