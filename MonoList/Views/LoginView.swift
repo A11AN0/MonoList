@@ -8,36 +8,46 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State var email = ""
+    @State var password = ""
+    
     var body: some View {
         VStack {
             //Header
-            ZStack {
-                RoundedRectangle(cornerRadius: 0)
-                    .foregroundColor(.mint)
-                    .rotationEffect(Angle(degrees: 15))
-                    
-                
-                VStack {
-                    Text("MonoList")
-                        .font(.system(size: 50))
-                        .foregroundColor(.white)
-                        .bold()
-                    Text("Productivity turbocharged")
-                        .font(.system(size: 30))
-                        .foregroundColor(.white)
-                        .fontWeight(.light)
-                }
-                .padding(.top, 30)
-            }
-            .frame(width: UIScreen.main.bounds.width * 3, height: 300)
-            .offset(y: -100)
+            HeaderView()
             Spacer()
             
             //Actual Login Form
+            Form {
+                TextField("Email Address", text:$email)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                SecureField("Password", text: $password)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                Button {
+                    //action to login goes here
+                } label: {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 10)
+                        Text("Login")
+                            .foregroundColor(.white)
+                            .fontWeight(.bold)
+                    }
+                    
+                }
+            }
+            
             
             //Footer/Sign-up nav link
-            
+            VStack {
+                Text("First time?")
+                
+                Button ("Create account") {
+                    //Go to registration view
+                }
+            }
+            .padding(.bottom, 50)
         }
+        
     }
 }
 
