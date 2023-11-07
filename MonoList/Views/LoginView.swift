@@ -12,40 +12,41 @@ struct LoginView: View {
     @State var password = ""
     
     var body: some View {
-        VStack {
-            //Header
-            HeaderView()
-            Spacer()
-            
-            //Actual Login Form
-            Form {
-                TextField("Email Address", text:$email)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                SecureField("Password", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                Button {
-                    //action to login goes here
-                } label: {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                        Text("Login")
-                            .foregroundColor(.white)
-                            .fontWeight(.bold)
-                    }
-                    
-                }
-            }
-            
-            
-            //Footer/Sign-up nav link
+        NavigationView {
             VStack {
-                Text("First time?")
+                //Header
+                HeaderView()
+                Spacer()
                 
-                Button ("Create account") {
-                    //Go to registration view
+                //Actual Login Form
+                Form {
+                    TextField("Email Address", text:$email)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                    SecureField("Password", text: $password)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                    Button {
+                        //action to login goes here
+                    } label: {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                            Text("Login")
+                                .foregroundColor(.white)
+                                .fontWeight(.bold)
+                        }
+                        
+                    }
+                    .padding()
                 }
+                .scrollContentBackground(.hidden)
+                
+                
+                //Footer/Sign-up nav link
+                VStack {
+                    Text("First time?")
+                    NavigationLink("Create account", destination: RegisterView())
+                }
+                .padding(.bottom, 50)
             }
-            .padding(.bottom, 50)
         }
         
     }
