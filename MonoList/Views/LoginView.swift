@@ -15,7 +15,7 @@ struct LoginView: View {
         NavigationView {
             VStack {
                 //Header
-                HeaderView()
+                HeaderView(title: "MonoList", subtitle: "Productivity turbocharged.", angle: 15, background: .mint)
                 Spacer()
                 
                 //Actual Login Form
@@ -38,12 +38,13 @@ struct LoginView: View {
                     .padding()
                 }
                 .scrollContentBackground(.hidden)
+                .offset(y: -50)
                 
                 
                 //Footer/Sign-up nav link
                 VStack {
                     Text("First time?")
-                    NavigationLink("Create account", destination: RegisterView())
+                    NavigationLink("Create your account", destination: RegisterView())
                 }
                 .padding(.bottom, 50)
             }

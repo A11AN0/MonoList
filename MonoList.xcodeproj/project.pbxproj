@@ -16,6 +16,7 @@
 		9D040B872AF1121A000B67A1 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9D040B862AF1121A000B67A1 /* FirebaseFirestoreSwift */; };
 		9D040B892AF27ADA000B67A1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D040B882AF27ADA000B67A1 /* GoogleService-Info.plist */; };
 		9D1F36182AF7A93800CD467A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1F36172AF7A93800CD467A /* HeaderView.swift */; };
+		9D8918172AFBC427009604C7 /* HeaderViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8918162AFBC427009604C7 /* HeaderViewViewModel.swift */; };
 		9D8BD9DC2AF64D2800618A3F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BD9DB2AF64D2800618A3F /* ProfileView.swift */; };
 		9D8BD9E02AF64D7400618A3F /* NewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BD9DF2AF64D7400618A3F /* NewItemView.swift */; };
 		9D8BD9E22AF64D8800618A3F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8BD9E12AF64D8800618A3F /* LoginView.swift */; };
@@ -41,6 +42,7 @@
 		9D040B7A2AF10E5A000B67A1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D040B882AF27ADA000B67A1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9D1F36172AF7A93800CD467A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		9D8918162AFBC427009604C7 /* HeaderViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewViewModel.swift; sourceTree = "<group>"; };
 		9D8BD9DB2AF64D2800618A3F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		9D8BD9DF2AF64D7400618A3F /* NewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemView.swift; sourceTree = "<group>"; };
 		9D8BD9E12AF64D8800618A3F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				9D8BD9F62AF66EB900618A3F /* RegisterViewViewModel.swift */,
 				9D8BD9F82AF66ECC00618A3F /* ToDoListItemViewViewModel.swift */,
 				9D8BD9FA2AF66EE100618A3F /* ToDoListViewViewModel.swift */,
+				9D8918162AFBC427009604C7 /* HeaderViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				9D8BD9E82AF64DDE00618A3F /* ToDoListView.swift in Sources */,
 				9D8BD9E42AF64D9700618A3F /* RegisterView.swift in Sources */,
 				9D8BD9F12AF66E8C00618A3F /* ProfileViewViewModel.swift in Sources */,
+				9D8918172AFBC427009604C7 /* HeaderViewViewModel.swift in Sources */,
 				9D8BD9DC2AF64D2800618A3F /* ProfileView.swift in Sources */,
 				9D8BD9EB2AF66E4100618A3F /* User.swift in Sources */,
 				9D8BD9FB2AF66EE100618A3F /* ToDoListViewViewModel.swift in Sources */,
