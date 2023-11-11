@@ -17,8 +17,15 @@ struct LoginView: View {
                 HeaderView(title: "MonoList", subtitle: "Productivity turbocharged.", angle: 15, background: .mint)
                 Spacer()
                 
+                
+                
                 //Actual Login Form
                 Form {
+                    //Error Message should go here
+                    if !viewModel.errorMessage.isEmpty {
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(.red)
+                    }
                     TextField("Email Address", text:$viewModel.email)
                         .textFieldStyle(DefaultTextFieldStyle())
                         .autocapitalization(.none)
@@ -26,7 +33,7 @@ struct LoginView: View {
                     SecureField("Password", text: $viewModel.password)
                         .textFieldStyle(DefaultTextFieldStyle())
                     TLButton(title: "Login", backgroundColor: .mint) {
-                        //Attempt login here
+                        viewModel.login()
                     }
                     .padding()
                 }
