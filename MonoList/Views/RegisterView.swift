@@ -21,20 +21,15 @@ struct RegisterView: View {
             Form {
                 TextField("Full Name", text:$name)
                     .textFieldStyle(DefaultTextFieldStyle())
+                    .autocorrectionDisabled()
                 TextField("Email Address", text:$email)
                     .textFieldStyle(DefaultTextFieldStyle())
+                    .autocapitalization(.none)
+                    .autocorrectionDisabled()
                 SecureField("Password", text: $password)
                     .textFieldStyle(DefaultTextFieldStyle())
-                Button {
-                    //action to login goes here
-                } label: {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                        Text("Register")
-                            .foregroundColor(.white)
-                            .fontWeight(.bold)
-                    }
-                    
+                TLButton(title: "Register", backgroundColor: .blue) {
+                    print("hi")
                 }
                 .padding()
             }
