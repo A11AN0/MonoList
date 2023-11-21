@@ -7,8 +7,9 @@
 
 import Foundation
 
-
 //Viewmodel for the whole list of items (primary tab)
 class ToDoListViewViewModel: ObservableObject {
+    @Published var showingNewItemView = false
+    
     init() {}
 }
