@@ -15,6 +15,8 @@ struct LoginView: View {
             VStack {
                 //Header
                 HeaderView(title: "MonoList", subtitle: "Productivity turbocharged.", angle: 15, background: .mint)
+                
+                
                 Spacer()
                 
                 

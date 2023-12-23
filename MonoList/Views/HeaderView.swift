@@ -12,13 +12,25 @@ struct HeaderView: View {
     let subtitle: String
     let angle: Double
     let background: Color
+    var imageName = ""
     
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 0)
-                .foregroundColor(background)
-                .rotationEffect(Angle(degrees: angle))
+            
+            if (imageName.count != 0)
+            {
+                Image(imageName)
+                    .resizable()
+                    .scaledToFit()
+                    .rotationEffect(Angle(degrees: angle))
+            }
+            else
+            {
+                RoundedRectangle(cornerRadius: 0)
+                    .foregroundColor(background)
+                    .rotationEffect(Angle(degrees: angle))
+            }
                 
             
             VStack {
